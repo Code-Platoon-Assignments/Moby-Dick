@@ -96,3 +96,20 @@ In this assignment, you will apply essential NLP techniques to the text of *Moby
   * **Verb Phrases** (optional)
 * Apply your chunk parser to your tagged tokens.
 * Inspect and print the resulting chunks to see which phrases were found.
+
+---
+
+### 7️⃣ **Finding Top 10 Most Common Phrases**
+
+* Your goal is to **identify the top 10 most common Noun Phrases (NP)** or **Verb Phrases (VP)** found in the text.
+* After chunking, extract these phrases from your chunk trees.
+* Use `collections.Counter` to:
+
+  * Count how many times each phrase appears in the text.
+  * Identify and return the top 10 most frequent phrases of the type you choose (Noun Phrases or Verb Phrases).
+* **Write a function** that:
+
+  1. Takes a list of chunked trees.
+  2. Extracts phrases that match a given label (e.g., `"NP"` or `"VP"`).
+  3. Returns the top 10 most common phrases as a list of tuples: `[(phrase_string, count), ...]`.
+* Display the results in a readable format (e.g., phrase text and frequency).
